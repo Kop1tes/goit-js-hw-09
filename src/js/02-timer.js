@@ -78,22 +78,14 @@ function addLeadingZero(value) {
     return String(value).padStart(2, '0');}
 
 const design = document.querySelector(".timer");
-design.style.display = "flex";
-design.style.flexDirection = "row";
+    design.style.display = "flex";
+    design.style.flexDirection = "row";
     design.style.textAlign = "left";
-design.style.padding = "20px";
-design.style.gap = "20px";
+    design.style.padding = "20px";
+    design.style.gap = "20px";
     design.style.color = "blue";
     design.style.fontSize = "20px";
 
-
-// display: flex;
-//     text-align: left;
-//     padding: 20px;
-//     color: blue;
-//     gap: 20px;
-//     font-size: 20px;
-//     flex-direction: row;
    
 
     
