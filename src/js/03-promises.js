@@ -44,7 +44,13 @@ refForm.addEventListener("input", () => {
   })
   .catch(({ position, delay }) => {
     Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
-  }); 
+  })
+     .finally(() => {
+       refForm.reset();
+       delay = 0;
+       step = 0;
+       amount = 0;
+     }); 
   delay += step
     };
  })
